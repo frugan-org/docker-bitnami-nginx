@@ -21,5 +21,7 @@ RUN chmod +x /entrypoint.sh
 # Revert to the original non-root user
 USER 1001
 
+EXPOSE 8080 8443 110 143 465 587 993 995
+
 ENTRYPOINT [ "/entrypoint.sh" ]
 CMD [ "/opt/bitnami/scripts/nginx/run.sh" ]
