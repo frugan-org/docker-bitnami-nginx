@@ -33,7 +33,7 @@ sed -i \
 
 {
   echo '';
-  echo "include \"/opt/bitnami/nginx/conf/custom.d/*.conf\";";
+  echo 'include "/opt/bitnami/nginx/conf/custom.d/*.conf";';
 } >> nginx.conf;
 
 
