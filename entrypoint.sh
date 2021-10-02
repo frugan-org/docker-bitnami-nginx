@@ -31,7 +31,7 @@ sed -i \
   -e 's/^\(\s*gzip.*\)/#\1/' \
   nginx.conf;
 
-echo 'include "/opt/bitnami/nginx/conf/custom/*.conf";' >> nginx.conf;
+echo "\ninclude \"/opt/bitnami/nginx/conf/custom.d/*.conf\";" >> nginx.conf;
 
 
 ####
