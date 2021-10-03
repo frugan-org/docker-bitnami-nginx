@@ -41,5 +41,3 @@ sed -i \
 
 #https://stackoverflow.com/a/46433245/3929620
 . /opt/bitnami/scripts/nginx/entrypoint.sh
-
-}
