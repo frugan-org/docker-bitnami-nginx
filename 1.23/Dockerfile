@@ -1,4 +1,4 @@
-FROM bitnami/nginx:1.21
+FROM bitnami/nginx:1.23
 
 #https://forums.docker.com/t/unable-to-find-user-root-no-matching-entries-in-passwd-file/26545/2
 # Required to perform privileged actions

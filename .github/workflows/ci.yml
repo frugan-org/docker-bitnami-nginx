@@ -39,12 +39,30 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
       -
-        name: Build and push [1.21, latest]
+        name: Build and push [1.21]
         uses: docker/build-push-action@v4
         with:
           context: ./1.21
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/bitnami-nginx:1.21,${{ secrets.DOCKERHUB_USERNAME }}/bitnami-nginx:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/bitnami-nginx:1.21
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      -
+        name: Build and push [1.22]
+        uses: docker/build-push-action@v4
+        with:
+          context: ./1.22
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/bitnami-nginx:1.22
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      -
+        name: Build and push [1.23, latest]
+        uses: docker/build-push-action@v4
+        with:
+          context: ./1.23
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/bitnami-nginx:1.23,${{ secrets.DOCKERHUB_USERNAME }}/bitnami-nginx:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
       # Docker Hub Personal Access Tokens cannot be used as they are not supported by the API.
