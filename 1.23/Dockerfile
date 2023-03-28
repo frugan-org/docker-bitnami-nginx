@@ -12,7 +12,7 @@ RUN install_packages \
 
 
 ### error-pages
-COPY --from=tarampampam/error-pages /opt/html /opt/bitnami/nginx/conf/error-pages
+COPY --from=tarampampam/error-pages /opt/html /opt/bitnami/nginx/error-pages
 
 
 ####
