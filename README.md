@@ -5,6 +5,7 @@
 Customization of the [Bitnami NGINX Docker image](https://github.com/bitnami/containers/tree/main/bitnami/nginx) with integration of:
 
 - [H5BP Nginx server configs](https://github.com/h5bp/server-configs-nginx)
+- [tarampampam error pages](https://github.com/tarampampam/error-pages)
 
 ### Changelog
 
