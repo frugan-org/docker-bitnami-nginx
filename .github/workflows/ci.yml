@@ -31,7 +31,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
         name: Build and push [1.20]
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: ./1.20
           push: true
@@ -40,7 +40,7 @@ jobs:
           cache-to: type=gha,mode=max
       -
         name: Build and push [1.21]
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: ./1.21
           push: true
@@ -49,7 +49,7 @@ jobs:
           cache-to: type=gha,mode=max
       -
         name: Build and push [1.22]
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: ./1.22
           push: true
@@ -58,7 +58,7 @@ jobs:
           cache-to: type=gha,mode=max
       -
         name: Build and push [1.23, latest]
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: ./1.23
           push: true
