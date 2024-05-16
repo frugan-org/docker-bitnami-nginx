@@ -9,7 +9,10 @@ Customization of the [Bitnami NGINX Docker image](https://github.com/bitnami/con
 
 ### Contributing
 
-For your contributions please use the [git-flow workflow](https://danielkummer.github.io/git-flow-cheatsheet/) and [conventional commits](https://www.conventionalcommits.org).
+For your contributions please use:
+
+- [git-flow workflow](https://danielkummer.github.io/git-flow-cheatsheet/)
+- [conventional commits](https://www.conventionalcommits.org)
 
 ### Changelog
 
