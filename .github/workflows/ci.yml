@@ -75,14 +75,23 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
       -
-        name: Build and push [1.25, latest]
+        name: Build and push [1.25]
         uses: docker/build-push-action@v5
         with:
           context: ./1.25
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/bitnami-nginx:1.25,${{ secrets.DOCKERHUB_USERNAME }}/bitnami-nginx:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/bitnami-nginx:1.25
           cache-from: type=gha
           cache-to: type=gha,mode=max
+      -
+        name: Build and push [1.26, latest]
+        uses: docker/build-push-action@v5
+        with:
+          context: ./1.26
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/bitnami-nginx:1.26,${{ secrets.DOCKERHUB_USERNAME }}/bitnami-nginx:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max   
       # Docker Hub Personal Access Tokens cannot be used as they are not supported by the API.
       # Unfortunately, this means that enabling 2FA on Docker Hub will prevent the action from working.
       -
