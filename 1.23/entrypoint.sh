@@ -13,11 +13,11 @@ cd /opt/bitnami/nginx/conf
 git clone https://github.com/h5bp/server-configs-nginx.git
 
 if [ -f "server-configs-nginx/mime.types" ]; then
-	mv server-configs-nginx/mime.types .
+	cp -r server-configs-nginx/mime.types .
 fi
 
 if [ -d "server-configs-nginx/h5bp" ]; then
-	mv server-configs-nginx/h5bp .
+	cp -r server-configs-nginx/h5bp .
 fi
 
 rm -Rf server-configs-nginx
